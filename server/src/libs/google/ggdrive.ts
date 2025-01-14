@@ -9,7 +9,6 @@ const ggdrive = google.drive({
 const folders = JSON.parse(process.env.GGDRIVE_FOLDERS as string);
 
 class GoogleDrive {
-
   static async upload(file: File, fileName: string, folder: string) {
     const buffer = Buffer.from(await file.arrayBuffer());
     const stream = Readable.from(buffer);
@@ -53,7 +52,6 @@ class GoogleDrive {
   static async delete(fileId: string){
     await ggdrive.files.delete({ fileId });
   }
-  
 }
 
 export default GoogleDrive;
