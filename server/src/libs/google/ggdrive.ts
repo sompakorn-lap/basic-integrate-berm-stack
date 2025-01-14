@@ -6,7 +6,6 @@ const ggdrive = google.drive({
   version: "v3",
   auth: ggauth,
 });
-
 const folders = JSON.parse(process.env.GGDRIVE_FOLDERS as string);
 
 class GoogleDrive {
