@@ -12,9 +12,11 @@
     "@elysiajs/swagger": "^1.1.6",
     "elysia": "latest",
     "googleapis": "^144.0.0",
-    "mongoose": "^8.8.3"
+    "mongoose": "^8.8.3",
+    "nodemailer": "^6.9.16"
   },
   "devDependencies": {
+    "@types/nodemailer": "^6.4.17",
     "bun-types": "latest"
   },
   "module": "src/index.js"
